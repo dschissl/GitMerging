@@ -12,13 +12,18 @@ public class TheMotivator {
 	}
 	
 	public void inside(int param) {
-		System.out.println("We are inside test function! (" + param + ")");
+		System.out.println("We are 'inside'! (" + param + ")");
+	}
+	
+	public void outside(int param) {
+		System.out.println("We are 'outside'! (" + param + ")");
 	}
 	
 	public static void main(String[] args) {
 		TheMotivator tm = new TheMotivator();
 		tm.feedback(60);
 		tm.inside(23);
+		tm.outside(44);
 	}
 }
 
