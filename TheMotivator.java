@@ -11,14 +11,14 @@ public class TheMotivator {
 			System.out.println("Well, what can I say?");
 	}
 	
-	public void inside() {
-		System.out.println("We are inside test function!");
+	public void inside(int param) {
+		System.out.println("We are inside test function! (" + param + ")");
 	}
 	
 	public static void main(String[] args) {
 		TheMotivator tm = new TheMotivator();
 		tm.feedback(60);
-		tm.inside();
+		tm.inside(23);
 	}
 }
 
