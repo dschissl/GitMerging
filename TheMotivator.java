@@ -11,9 +11,14 @@ public class TheMotivator {
 			System.out.println("Well, what can I say?");
 	}
 	
+	public void testFuntion() {
+		System.out.println("We are inside test function!");
+	}
+	
 	public static void main(String[] args) {
 		TheMotivator tm = new TheMotivator();
 		tm.feedback(60);
+		tm.testFuntion();
 	}
 }
 
